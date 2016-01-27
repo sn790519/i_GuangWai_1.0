@@ -1,0 +1,22 @@
+ListView加载网络数据和图片  :
+
+1、异步加载服务器访问商品数据（json格式）
+      封装网络访问的方法
+2、json数据转为Adapter数据（List<Map<String,Object>>）
+     封装数据转换的方法
+3、Adapter先加载文本内容信息
+     使用AsyncTask加载网络访问的集合数据
+     加载ListView中的文本信息
+4、json数据中有图片信息（路径），异步读取加载图片
+    采用接口回调的方法，加载图片信息（Handler+Thread）
+
+
+1.异步框架解析帖子信息的json到帖子实体类article
+2. 自定义article list的adapter
+3.listview设置adapter
+4.上拉加载  , 下拉刷新（联网返回数据）
+5.数据库缓存
+
+6.个人中心
+
+7.图片异步加载
